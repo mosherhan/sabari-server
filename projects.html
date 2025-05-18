@@ -395,22 +395,72 @@
 <body class="body">
   <div class="site-wrapper">
     <section class="about-hero-section">
-      <nav data-w-id="bd093818-7ab9-c27f-a59d-fb0356306e99" class="nav-dark"><a href="index.html"
-          class="brand-link-dark w-inline-block">
+
+      <style>
+        /* Logo styles for dark navigation */
+        .brand-logo {
+          width: 220px;
+          height: auto;
+          display: block;
+          transition: all 0.3s ease;
+        }
+
+        .mobile-brand-text-dark {
+          display: none;
+          font-size: 18px;
+          font-weight: bold;
+          color: #1e4e72;
+          /* White text for dark nav */
+          text-align: center;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+
+        .brand-link-dark {
+          text-decoration: none !important;
+        }
+
+        /* Larger screens (laptops and up) */
+        @media (min-width: 992px) {
+          .brand-logo {
+            width: 260px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .brand-logo {
+            display: none !important;
+          }
+
+          .mobile-brand-text-dark {
+            display: block !important;
+          }
+        }
+      </style>
+
+      <nav class="nav-dark">
+        <a href="index.html" class="brand-link-dark w-inline-block">
           <div class="html-embed w-embed">
-            <img src="assets/sabarigiri-header-otherpage.png" loading="lazy" alt="logo" class="brand-logo">
+            <img src="assets/sabarigiri-header-otherpage.png" loading="lazy" alt="Sabarigiri Industries Logo"
+              class="brand-logo">
+            <div class="mobile-brand-text-dark">SABARIGIRI INDUSTRIES</div>
           </div>
-        </a><a href="contact.html#Start_Project" class="start-project-btn-dark w-inline-block">
+        </a>
+        <a href="contact.html#Start_Project" class="start-project-btn-dark w-inline-block">
           <div class="text-block">Start your project</div>
           <div class="btn-inner-dark"></div>
-        </a><a href="#" class="menu-btn-dark w-inline-block">
-          <div class="menu-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24.39654 135.02567"
-              color="inherit">
+        </a>
+        <a href="#" class="menu-btn-dark w-inline-block">
+          <div class="menu-icon w-embed">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.39654 135.02567" color="inherit">
               <rect fill="currentColor" width="24.39654" height="24.39654"></rect>
               <rect fill="currentColor" y="55.31456" width="24.39654" height="24.39654"></rect>
               <rect fill="currentColor" y="110.62913" width="24.39654" height="24.39654"></rect>
-            </svg></div>
-        </a></nav>
+            </svg>
+          </div>
+        </a>
+      </nav>
+
       <div data-w-id="e6400220-3db3-e2a5-66ab-d2a5fe7b0fdc" class="dark-hero-info">
         <div class="contact-hero-left-col">
           <div data-w-id="f8cb6f93-5919-85a9-abc4-d5c2d2e5584f" class="dark-hero-blue-line"></div>
@@ -429,9 +479,9 @@
 
 
     <!-- project div section latest -->
-<!-- project4 -->
+    <!-- project4 -->
 
-<div style="
+    <div style="
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -440,32 +490,32 @@
   padding: 2rem;
 ">
 
-  <!-- Text Content -->
-  <div style="
+      <!-- Text Content -->
+      <div style="
     flex: 1 1 300px;
     color: white;
     min-width: 280px;
     max-width: 600px;
   ">
-    <h3 style="font-style: italic;">First in Kerala</h3>
-    <h1 style="font-size: 2.5rem; line-height: 1.2;">Laser Cutting of Pipe,Tube and Angle</h1>
-    <p style="margin-top: 1rem; line-height: 1.6;">
-      Our state-of-the-art laser cutting technology ensures precise and clean cuts for pipes, tubes, and angles,
-      delivering exceptional accuracy and smooth finishes. As the first in Kerala to offer specialized laser cutting
-      for tubes and angles, we provide high-quality solutions for structural, industrial, and custom fabrication
-      needs.
-    </p>
-  </div>
+        <h3 style="font-style: italic;">First in Kerala</h3>
+        <h1 style="font-size: 2.5rem; line-height: 1.2;">Laser Cutting of Pipe,Tube and Angle</h1>
+        <p style="margin-top: 1rem; line-height: 1.6;">
+          Our state-of-the-art laser cutting technology ensures precise and clean cuts for pipes, tubes, and angles,
+          delivering exceptional accuracy and smooth finishes. As the first in Kerala to offer specialized laser cutting
+          for tubes and angles, we provide high-quality solutions for structural, industrial, and custom fabrication
+          needs.
+        </p>
+      </div>
 
-  <!-- Image Slider Content -->
-  <div class="sliderWrapper" style="
+      <!-- Image Slider Content -->
+      <div class="sliderWrapper" style="
     flex: 1 1 300px;
     min-width: 280px;
     max-width: 600px;
     position: relative;
   ">
-    <!-- Left Button -->
-    <button onclick="scrollSlider(this, -1)" style="
+        <!-- Left Button -->
+        <button onclick="scrollSlider(this, -1)" style="
       position: absolute;
       top: 50%;
       left: -10px;
@@ -479,29 +529,29 @@
       z-index: 1;
     ">&lt;</button>
 
-    <!-- Scrollable Images -->
-    <div class="imageSlider" style="
+        <!-- Scrollable Images -->
+        <div class="imageSlider" style="
       display: flex;
       overflow-x: auto;
       scroll-behavior: smooth;
       scrollbar-width: none;
       gap: 1rem;
     ">
-      <img src="assets/steeluse (5).jpg" alt="Handrail 1"
-        style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
-      <img src="assets/steeluse (13).jpg" alt="Handrail 2"
-        style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
-      <img src="assets/steeluse (6).jpg" alt="Handrail 3"
-        style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
-      <img src="assets/steeluse (4).jpg" alt="Handrail 4"
-        style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
-      <video src="assets/holecut.mp4" style="max-height: 350px; width: auto; border-radius: 12px;
+          <img src="assets/steeluse (5).jpg" alt="Handrail 1"
+            style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
+          <img src="assets/steeluse (13).jpg" alt="Handrail 2"
+            style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
+          <img src="assets/steeluse (6).jpg" alt="Handrail 3"
+            style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
+          <img src="assets/steeluse (4).jpg" alt="Handrail 4"
+            style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
+          <video src="assets/holecut.mp4" style="max-height: 350px; width: auto; border-radius: 12px;
                       flex: 0 0 auto;" autoplay loop muted></video>
 
-    </div>
+        </div>
 
-    <!-- Right Button -->
-    <button onclick="scrollSlider(this, 1)" style="
+        <!-- Right Button -->
+        <button onclick="scrollSlider(this, 1)" style="
       position: absolute;
       top: 50%;
       right: -10px;
@@ -514,24 +564,24 @@
       border-radius: 5px 0 0 5px;
       z-index: 1;
     ">&gt;</button>
-  </div>
-</div>
+      </div>
+    </div>
 
-<!-- Scroll Script -->
-<script>
-  function scrollSlider(button, direction) {
-    const wrapper = button.closest('.sliderWrapper');
-    const slider = wrapper.querySelector('.imageSlider');
-    const scrollAmount = 300;
-    if (slider) {
-      slider.scrollBy({
-        left: direction * scrollAmount,
-        behavior: 'smooth'
-      });
-    }
-  }
-</script>
-<div style="
+    <!-- Scroll Script -->
+    <script>
+      function scrollSlider(button, direction) {
+        const wrapper = button.closest('.sliderWrapper');
+        const slider = wrapper.querySelector('.imageSlider');
+        const scrollAmount = 300;
+        if (slider) {
+          slider.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+          });
+        }
+      }
+    </script>
+    <div style="
   width: 100%;
   height: 1px;
   background-color: #ffffff;
@@ -539,7 +589,7 @@
   margin: 2rem 0;
 "></div>
 
-<!-- project1 -->
+    <!-- project1 -->
 
     <div style="
   display: flex;
@@ -604,7 +654,7 @@
           <img src="assets/steeluse (9).jpg" alt="Handrail 4"
             style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
 
-          </div>
+        </div>
 
         <!-- Right Button -->
         <button onclick="scrollSlider(this, 1)" style="
@@ -646,7 +696,7 @@ opacity: 0.2;
 margin: 2rem 0;
 "></div>
 
-<!-- project2 -->
+    <!-- project2 -->
 
 
     <div style="
@@ -756,7 +806,7 @@ opacity: 0.2;
 margin: 2rem 0;
 "></div>
 
-<!-- project3 -->
+    <!-- project3 -->
 
     <div style="
   display: flex;
@@ -820,7 +870,7 @@ margin: 2rem 0;
             style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
           <img src="assets/kambi.jpg" alt="Handrail 4"
             style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
-            <video src="assets/straight.mp4" style="max-height: 350px; width: auto; border-radius: 12px;
+          <video src="assets/straight.mp4" style="max-height: 350px; width: auto; border-radius: 12px;
                         flex: 0 0 auto;" autoplay loop muted></video>
         </div>
 
@@ -973,7 +1023,7 @@ margin: 2rem 0;
       </div>
     </div> -->
 
-    
+
 
 
 

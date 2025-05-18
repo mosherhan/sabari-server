@@ -378,21 +378,72 @@
 <body class="body">
   <div class="site-wrapper">
     <section class="about-hero-section">
-      <nav class="nav-dark"><a href="index.html" class="brand-link-dark w-inline-block">
+
+      <style>
+        /* Logo styles for dark navigation */
+        .brand-logo {
+          width: 220px;
+          height: auto;
+          display: block;
+          transition: all 0.3s ease;
+        }
+
+        .mobile-brand-text-dark {
+          display: none;
+          font-size: 18px;
+          font-weight: bold;
+          color: #1e4e72;
+          /* White text for dark nav */
+          text-align: center;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+
+        .brand-link-dark {
+          text-decoration: none !important;
+        }
+
+        /* Larger screens (laptops and up) */
+        @media (min-width: 992px) {
+          .brand-logo {
+            width: 260px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .brand-logo {
+            display: none !important;
+          }
+
+          .mobile-brand-text-dark {
+            display: block !important;
+          }
+        }
+      </style>
+
+      <nav class="nav-dark">
+        <a href="index.html" class="brand-link-dark w-inline-block">
           <div class="html-embed w-embed">
-            <img src="assets/sabarigiri-header-otherpage.png" loading="lazy" alt="logo" class="brand-logo">
+            <img src="assets/sabarigiri-header-otherpage.png" loading="lazy" alt="Sabarigiri Industries Logo"
+              class="brand-logo">
+            <div class="mobile-brand-text-dark">SABARIGIRI INDUSTRIES</div>
           </div>
-        </a><a href="contact.html#Start_Project" class="start-project-btn-dark w-inline-block">
+        </a>
+        <a href="contact.html#Start_Project" class="start-project-btn-dark w-inline-block">
           <div class="text-block">Start your project</div>
           <div class="btn-inner-dark"></div>
-        </a><a href="#" class="menu-btn-dark w-inline-block">
-          <div class="menu-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24.39654 135.02567"
-              color="inherit">
+        </a>
+        <a href="#" class="menu-btn-dark w-inline-block">
+          <div class="menu-icon w-embed">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.39654 135.02567" color="inherit">
               <rect fill="currentColor" width="24.39654" height="24.39654"></rect>
               <rect fill="currentColor" y="55.31456" width="24.39654" height="24.39654"></rect>
               <rect fill="currentColor" y="110.62913" width="24.39654" height="24.39654"></rect>
-            </svg></div>
-        </a></nav>
+            </svg>
+          </div>
+        </a>
+      </nav>
+
       <div class="dark-hero-info">
         <div class="contact-hero-left-col">
           <div data-w-id="f4ad27b6-1b5c-9a0d-eece-c2eb1b947c1f" class="dark-hero-blue-line"></div>
@@ -484,9 +535,11 @@
       <div class="contact-info">
         <div class="contact-info-row-1">
           <div data-w-id="4ec59d77-5181-e85a-1d99-00b32b04855d" class="blue-line-contact-info"></div><a
-            data-w-id="f4a95c63-c951-2403-2618-395a9f25645a" href="tel:+91 6238581814" class="contact-page-info-link">+91
-            6238581814</a><a data-w-id="521a920d-2f6d-9cf9-a96b-00f33de2e6f0" href="mailto:sabarigiriindustry@gmail.com?subject=Enquiry"
-            class="contact-page-info-link" style="font-size:large;">sabarigiriindustry@gmail.com</a>
+            data-w-id="f4a95c63-c951-2403-2618-395a9f25645a" href="tel:+91 6238581814"
+            class="contact-page-info-link">+91
+            6238581814</a><a data-w-id="521a920d-2f6d-9cf9-a96b-00f33de2e6f0"
+            href="mailto:sabarigiriindustry@gmail.com?subject=Enquiry" class="contact-page-info-link"
+            style="font-size:large;">sabarigiriindustry@gmail.com</a>
         </div>
         <div data-w-id="bde6fcd7-2d8c-a261-ff9d-36ec63f558b3" class="contact-info-row-2">
           <p class="contact-info-address">Sabarigiri Industries, Kaduvinal, Vallikunnam,<br>PIN-690501, Alappuzha,
@@ -550,8 +603,7 @@
                 href="contact.html" aria-current="page" class="footer-link w--current">Contact</a></div>
             <div class="footer-left-2"><a
                 href="https://www.facebook.com/story.php?story_fbid=418148224471261&id=100088282592070&mibextid=qi2Omg&rdid=hP7NOuUZLeqOPMmp#"
-                class="footer-link">Facebook</a><a
-                href="https://youtube.com/@sabarigiriindustries?si=eB_I6gEZ7B-LZgYW"
+                class="footer-link">Facebook</a><a href="https://youtube.com/@sabarigiriindustries?si=eB_I6gEZ7B-LZgYW"
                 class="footer-link">Youtube</a></div>
           </div>
           <div class="footer-right"><a
