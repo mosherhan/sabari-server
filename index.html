@@ -484,10 +484,55 @@
 <body class="body">
   <div class="site-wrapper">
     <section class="home-hero-section">
-      <nav data-w-id="bd093818-7ab9-c27f-a59d-fb0356306e99" class="nav"><a href="index.html" aria-current="page"
-          class="brand-link w-inline-block w--current">
+
+      <style>
+        .brand-logo {
+          width: 220px;
+          /* Increased from 180px for better desktop visibility */
+          height: auto;
+          display: block;
+          transition: all 0.3s ease;
+          /* Smooth scaling */
+        }
+
+        .mobile-brand-text {
+          display: none;
+          font-size: 18px;
+          font-weight: bold;
+          color: #fbfbfb;
+          text-align: center;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+
+        .brand-link {
+          text-decoration: none !important;
+        }
+
+        /* Larger screens (laptops and up) */
+        @media (min-width: 992px) {
+          .brand-logo {
+            width: 260px;
+            /* Even larger for bigger screens */
+          }
+        }
+
+        @media (max-width: 768px) {
+          .brand-logo {
+            display: none !important;
+          }
+
+          .mobile-brand-text {
+            display: block !important;
+          }
+        }
+      </style>
+
+      <nav data-w-id="bd093818-7ab9-c27f-a59d-fb0356306e99" class="nav">
+        <a href="index.html" aria-current="page" class="brand-link w-inline-block w--current">
           <div class="html-embed w-embed">
-            <img src="assets/sabarigiri-header.png" loading="lazy" alt="logo" class="brand-logo">
+            <img src="assets/sabarigiri-header.png" loading="lazy" alt="Sabarigiri Industries Logo" class="brand-logo">
+            <div class="mobile-brand-text">SABARIGIRI INDUSTRIES</div>
           </div>
         </a>
         <a href="contact.html#Start_Project" class="start-project-btn w-inline-block">
@@ -495,14 +540,16 @@
           <div class="btn-blue-inner"></div>
         </a>
         <a href="#" class="menu-btn w-inline-block">
-          <div class="menu-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24.39654 135.02567"
-              color="inherit">
+          <div class="menu-icon w-embed">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.39654 135.02567" color="inherit">
               <rect fill="currentColor" width="24.39654" height="24.39654"></rect>
               <rect fill="currentColor" y="55.31456" width="24.39654" height="24.39654"></rect>
               <rect fill="currentColor" y="110.62913" width="24.39654" height="24.39654"></rect>
-            </svg></div>
+            </svg>
+          </div>
         </a>
       </nav>
+
       <div class="hero-columns">
         <div data-w-id="cc9d14e9-ca0f-917e-95c1-83d8d6f19a7b" class="hero-left">
           <!-- <a
@@ -601,9 +648,7 @@
       </div>
       <div id="Carousel" class="project-slide-wrapper">
         <div class="dynamic-project-slide">
-          <div class="project-image-wrapper"><img
-              src="assets/lasercuttinghandrails.webp" loading="lazy"
-              sizes="100vw"
+          <div class="project-image-wrapper"><img src="assets/lasercuttinghandrails.webp" loading="lazy" sizes="100vw"
               alt="" class="project-item-image"></div>
           <div class="home-projects-columns">
             <div class="home-projects-left">
@@ -612,7 +657,7 @@
             </div>
             <div class="home-projects-right">
               <p class="home-projects-paragraph">We are undertaking all kinds of steel MS and CS, Stainless Steel,
-                 And we provide following services to our customers</p>
+                And we provide following services to our customers</p>
             </div>
           </div>
           <div class="details-left-col">
@@ -630,10 +675,8 @@
           </div>
         </div>
         <div class="dynamic-project-slide">
-          <div class="project-image-wrapper"><img
-              src="assets/autocutting.jpg" loading="lazy"
-              sizes="100vw"
-              alt="" class="project-item-image"></div>
+          <div class="project-image-wrapper"><img src="assets/autocutting.jpg" loading="lazy" sizes="100vw" alt=""
+              class="project-item-image"></div>
           <div class="home-projects-columns">
             <div class="home-projects-left">
               <div class="project-number"><span class="current-project-number">02</span> / <span
@@ -696,17 +739,15 @@
       <div class="home-about-left-col">
         <div class="halc-top-row">
           <div data-w-id="1055733d-3463-aa2d-6104-88d376282ec0" class="halc-top-left">
-            <div class="home-about-para-wrapper-1"><img
-                src="assets/kambi.jpg" loading="lazy"
-                data-w-id="71ae1ae1-547f-cc9b-8a4f-73db462ee624" sizes="100vw"
-                alt="" class="home-about-photo-1"></div>
+            <div class="home-about-para-wrapper-1"><img src="assets/kambi.jpg" loading="lazy"
+                data-w-id="71ae1ae1-547f-cc9b-8a4f-73db462ee624" sizes="100vw" alt="" class="home-about-photo-1"></div>
           </div>
           <div class="halc-top-right">
             <h2 data-w-id="ae942f3d-19a4-5cd4-5698-4e206bd30e91" class="blue-heading">About Us</h2>
             <p data-w-id="71ee93e6-9357-ec7b-b8b7-49f5d400b569" class="home-about-paragraph">Sabarigiri Industries is
               one of the leading companies specializing in laser cutting and steel ornamentation, located in Kaduvinal,
               Vallikunnam, Alappuzha, Kerala.<br><br>We undertake a wide range of projects involving Metal Sheet (MS),
-               Stainless Steel, Brass, and Titanium. Our expertise
+              Stainless Steel, Brass, and Titanium. Our expertise
               extends to precision laser cutting, making us the first in Kerala to offer specialized laser cutting
               services for all types of pipes.<br><br>With a commitment to quality, innovation, and customer
               satisfaction, we strive to deliver high-precision metal fabrication solutions tailored to diverse
@@ -729,10 +770,8 @@
         </div> -->
       </div>
       <div class="home-about-right-col">
-        <div class="home-about-para-wrapper-2"><img
-            src="assets/doorsteel.jpg" loading="lazy"
-            data-w-id="f5d19ffa-75a7-659b-a423-09d774c885a9" sizes="100vw"
-            alt="" class="home-about-photo-2"></div>
+        <div class="home-about-para-wrapper-2"><img src="assets/doorsteel.jpg" loading="lazy"
+            data-w-id="f5d19ffa-75a7-659b-a423-09d774c885a9" sizes="100vw" alt="" class="home-about-photo-2"></div>
       </div>
     </section>
     <section class="home-form-section">
@@ -762,9 +801,9 @@
                   href="https://policies.google.com/privacy" class="recaptcha-link">Privacy Policy</a> and <a
                   target="_blank" href="https://policies.google.com/terms" class="recaptcha-link">Terms of Service</a>
                 apply.</p> -->
-                <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; justify-content: center; width: 100%;">
-                  <div class="submit-btn w-embed" 
-                      style="display: flex; 
+                <form action="https://api.web3forms.com/submit" method="POST"
+                  style="display: flex; justify-content: center; width: 100%;">
+                  <div class="submit-btn w-embed" style="display: flex; 
                              align-items: center; 
                              justify-content: center; 
                              background-color: white; 
@@ -778,9 +817,8 @@
                              width: fit-content;
                              max-width: 100%;
                              margin: 0 auto;">
-                      
-                      <button type="submit" 
-                              style="position: absolute; 
+
+                    <button type="submit" style="position: absolute; 
                                      inset: 0;
                                      width: 100%; 
                                      height: 100%; 
@@ -788,49 +826,48 @@
                                      background: transparent;
                                      cursor: pointer; 
                                      z-index: 3;">
-                      </button>
-              
-                      <div style="display: flex; 
+                    </button>
+
+                    <div style="display: flex; 
                                   align-items: center; 
                                   gap: 10px; 
                                   position: relative;
                                   z-index: 2;">
-                          <div>Send enquiry</div>
-                          <div class="arrow-icon w-embed" 
-                              style="display: flex; 
+                      <div>Send enquiry</div>
+                      <div class="arrow-icon w-embed" style="display: flex; 
                                      align-items: center;
                                      justify-content: center;
                                      flex-shrink: 0;">
-                              <svg xmlns="http://www.w3.org/2000/svg" 
-                                  viewBox="0 0 10.41406 10.41504"
-                                  style="display: block; width: 14px; height: 14px;" 
-                                  color="inherit">
-                                  <polygon fill="currentColor"
-                                      points="0.719 0 0.719 2.034 6.942 2.034 0 8.977 1.438 10.415 8.381 3.472 8.381 9.696 10.414 9.696 10.414 0 0.719 0">
-                                  </polygon>
-                              </svg>
-                          </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.41406 10.41504"
+                          style="display: block; width: 14px; height: 14px;" color="inherit">
+                          <polygon fill="currentColor"
+                            points="0.719 0 0.719 2.034 6.942 2.034 0 8.977 1.438 10.415 8.381 3.472 8.381 9.696 10.414 9.696 10.414 0 0.719 0">
+                          </polygon>
+                        </svg>
                       </div>
+                    </div>
                   </div>
-              </form>
-              
-              <style>
+                </form>
+
+                <style>
                   @media (max-width: 768px) {
-                      .submit-btn {
-                          width: 100%;
-                          justify-content: space-between;
-                          padding: 10px 20px !important;
-                      }
-                      .submit-btn > div {
-                          font-size: 14px;
-                          gap: 8px;
-                      }
-                      .submit-btn svg {
-                          width: 12px !important;
-                          height: 12px !important;
-                      }
+                    .submit-btn {
+                      width: 100%;
+                      justify-content: space-between;
+                      padding: 10px 20px !important;
+                    }
+
+                    .submit-btn>div {
+                      font-size: 14px;
+                      gap: 8px;
+                    }
+
+                    .submit-btn svg {
+                      width: 12px !important;
+                      height: 12px !important;
+                    }
                   }
-              </style>
+                </style>
               </div>
             </form>
             <div class="success-message w-form-done">
@@ -886,19 +923,19 @@
       </div>
     </div>
     <div id="Loader" data-w-id="72fcacf6-a72c-056f-526a-63d84c68e9bd" class="mobile-loader"><img
-        src="assets/sabarigirilogo.png" loading="lazy"
-        data-w-id="0aadd351-ab69-8ec7-ee35-af5ad6f9794d" alt="" class="loader-logo"></div>
+        src="assets/sabarigirilogo.png" loading="lazy" data-w-id="0aadd351-ab69-8ec7-ee35-af5ad6f9794d" alt=""
+        class="loader-logo"></div>
     <footer class="footer">
       <div class="footer-inner">
         <div class="footer-row-1">
           <div class="footer-left">
-            <div class="footer-left-1"><a href="index.html" aria-current="page" class="footer-link w--current">Home</a><a
-                href="about.html" class="footer-link">About</a><a href="projects.html"
-                class="footer-link">Projects</a><a href="contact.html" class="footer-link">Contact</a></div>
+            <div class="footer-left-1"><a href="index.html" aria-current="page"
+                class="footer-link w--current">Home</a><a href="about.html" class="footer-link">About</a><a
+                href="projects.html" class="footer-link">Projects</a><a href="contact.html"
+                class="footer-link">Contact</a></div>
             <div class="footer-left-2"><a
                 href="https://www.facebook.com/story.php?story_fbid=418148224471261&id=100088282592070&mibextid=qi2Omg&rdid=hP7NOuUZLeqOPMmp#"
-                class="footer-link">Facebook</a><a
-                href="https://youtube.com/@sabarigiriindustries?si=eB_I6gEZ7B-LZgYW"
+                class="footer-link">Facebook</a><a href="https://youtube.com/@sabarigiriindustries?si=eB_I6gEZ7B-LZgYW"
                 class="footer-link">Youtube</a>
             </div>
           </div>
@@ -931,8 +968,9 @@
                 loading="lazy" alt="" class="image"></div>
           </div>
           <div class="lower-footer-right">
-            <div class="footer-smallprint">© 2025 Sabarigiri Industries Ltd<span class="lower-footer-divider">   | </span></div><a href="https://makewithus.in/" target="_blank" class="influx-link w-inline-block">
-              
+            <div class="footer-smallprint">© 2025 Sabarigiri Industries Ltd<span class="lower-footer-divider">  
+                | </span></div><a href="https://makewithus.in/" target="_blank" class="influx-link w-inline-block">
+
               <div class="footer-smallprint"> Make With Us</div>
             </a>
           </div>
