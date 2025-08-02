@@ -924,7 +924,115 @@ margin: 2rem 0;
 
 
 
+<!-- project2 -->
 
+
+<div style="
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+">
+
+  <!-- Text Content -->
+  <div style="
+    flex: 1 1 300px;
+    color: white;
+    min-width: 280px;
+    max-width: 600px;
+  ">
+    <h3 style="font-style: italic;">Creative Cutting</h3>
+    <h1 style="font-size: 2.5rem; line-height: 1.2;">Square Tube & Round Tube Cutting</h1>
+    <p style="margin-top: 1rem; line-height: 1.6;">
+      We provide high-precision laser cutting for stainless steel tubes of different shapes especially that of square and round, ensuring accuracy and durability. Our advanced
+      technology supports plate cutting from 0.1mm to 15mm, delivering flawless edges and intricate detailing for
+      high-performance automotive components.
+    </p>
+  </div>
+
+  <!-- Image Slider Content -->
+  <div class="sliderWrapper" style="
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 600px;
+    position: relative;
+  ">
+    <!-- Left Button -->
+    <button onclick="scrollSlider(this, -1)" style="
+      position: absolute;
+      top: 50%;
+      left: -10px;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
+      z-index: 1;
+    ">&lt;</button>
+
+    <!-- Scrollable Images -->
+    <div class="imageSlider" style="
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      gap: 1rem;
+    ">
+      <img src="assets/steeluse (11).jpg" alt="Handrail 1"
+        style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
+      <img src="assets/steeluse (12).jpg" alt="Handrail 2"
+        style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
+      <img src="assets/steeluse (1).jpg" alt="Handrail 3"
+        style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
+      <img src="assets/steeluse (15).jpg" alt="Handrail 4"
+        style="max-height: 350px; width: auto; border-radius: 12px; flex: 0 0 auto;">
+      <video src="assets/cut.mp4" style="max-height: 350px; width: auto; border-radius: 12px;
+            flex: 0 0 auto;" autoplay loop muted></video>
+    </div>
+
+    <!-- Right Button -->
+    <button onclick="scrollSlider(this, 1)" style="
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px 0 0 5px;
+      z-index: 1;
+    ">&gt;</button>
+  </div>
+</div>
+
+<!-- Scroll Script -->
+<script>
+  function scrollSlider(button, direction) {
+    const wrapper = button.closest('.sliderWrapper');
+    const slider = wrapper.querySelector('.imageSlider');
+    const scrollAmount = 300;
+    if (slider) {
+      slider.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  }
+</script>
+
+<div style="
+width: 100%;
+height: 1px;
+background-color: #ffffff;
+opacity: 0.2;
+margin: 2rem 0;
+"></div>
 
 
 
